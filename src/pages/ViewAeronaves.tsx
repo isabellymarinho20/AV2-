@@ -44,7 +44,7 @@ export default function ViewAeronaves({ setView, setSelectedAero }: Props) {
           rows={aeronaves.map(aeronave => ({
             _onClick: () => { setSelectedAero(aeronave); setView('aeroDetalhe') },
             cells: [
-              { content: <span style={{ fontFamily: 'JetBrains Mono', color: '#007CC3', fontWeight: 600, fontSize: 12 }}>{aeronave.codigo}</span> },
+              { content: <span style={{  color: '#000000', fontWeight: 600, fontSize: 12 }}>{aeronave.codigo}</span> },
               { content: <span style={{ fontWeight: 600 }}>{aeronave.modelo}</span> },
               { content: <Badge variant={aeronave.tipo === 'Militar' ? 'red' : 'blue'}>{aeronave.tipo}</Badge> },
               `${aeronave.capacidade} pax`,

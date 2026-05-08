@@ -19,16 +19,16 @@ const SEED: { aeronaves: Aeronave[]; funcionarios: Funcionario[] } = {
   aeronaves: [
     {
       id: 1,
-      codigo: 'AC-100',
-      modelo: 'Phenom 300',
+      codigo: '1',
+      modelo: 'aviao',
       tipo: 'Comercial',
       capacidade: 10,
       alcance: 3650,
       pecas: [
-        { nome: 'Motor PT6A-10', tipo: 'Importada', fornecedor: 'Pratt & Whitney', status: 'Pronta' },
+        { nome: 'Motor1', tipo: 'Importada', fornecedor: 'Embraer', status: 'Pronta' },
       ],
       etapas: [
-        { id: 101, nome: 'Montagem de Fuselagem', status: 'Concluído', prazo: '2025-03-10', funcionarios: [1, 3] },
+        { id: 101, nome: 'Montagem ', status: 'Concluído', prazo: '2025-03-10', funcionarios: [1, 3] },
       ],
       testes: [
         { tipo: 'Elétrico', resultado: 'Aprovado' },
@@ -36,16 +36,16 @@ const SEED: { aeronaves: Aeronave[]; funcionarios: Funcionario[] } = {
     },
     {
       id: 2,
-      codigo: 'AC-200',
-      modelo: 'Gripen NG',
+      codigo: '2',
+      modelo: 'aviao2',
       tipo: 'Militar',
       capacidade: 1,
       alcance: 4000,
       pecas: [
-        { nome: 'Motor RM12', tipo: 'Importada', fornecedor: 'Volvo Aero', status: 'Em Transporte' },
+        { nome: 'Motor2', tipo: 'Importada', fornecedor: 'Embraer', status: 'Em Transporte' },
       ],
       etapas: [
-        { id: 201, nome: 'Integração de Sistemas', status: 'Em Andamento', prazo: '2025-04-15', funcionarios: [2, 4] },
+        { id: 201, nome: 'Integração', status: 'Em Andamento', prazo: '2025-04-15', funcionarios: [2, 4] },
       ],
       testes: [
         { tipo: 'Aerodinâmico', resultado: 'Aprovado' },
@@ -53,31 +53,31 @@ const SEED: { aeronaves: Aeronave[]; funcionarios: Funcionario[] } = {
     },
     {
       id: 3,
-      codigo: 'AC-300',
-      modelo: 'C-390 Millennium',
+      codigo: '3',
+      modelo: 'aviao3',
       tipo: 'Militar',
       capacidade: 80,
       alcance: 5800,
       pecas: [
-        { nome: 'Motor AE 3007', tipo: 'Importada', fornecedor: 'Rolls-Royce', status: 'Em Produção' },
+        { nome: 'Motor3', tipo: 'Importada', fornecedor: 'Embraer', status: 'Em Produção' },
       ],
       etapas: [
-        { id: 301, nome: 'Estrutura Primária', status: 'Pendente', prazo: '2025-06-01', funcionarios: [] },
+        { id: 301, nome: 'Estrutura ', status: 'Pendente', prazo: '2025-06-01', funcionarios: [] },
       ],
       testes: [],
     },
     {
       id: 4,
-      codigo: 'AC-400',
-      modelo: 'Legacy 500',
+      codigo: '4',
+      modelo: 'aviao4',
       tipo: 'Comercial',
       capacidade: 12,
       alcance: 5600,
       pecas: [
-        { nome: 'Motor HTF7500E', tipo: 'Importada', fornecedor: 'Honeywell', status: 'Pronta' },
+        { nome: 'Motor 5', tipo: 'Importada', fornecedor: 'Embraer', status: 'Pronta' },
       ],
       etapas: [
-        { id: 401, nome: 'Instalação de Aviônicos', status: 'Concluído', prazo: '2025-02-28', funcionarios: [5, 6] },
+        { id: 401, nome: 'Instalação ', status: 'Concluído', prazo: '2025-02-28', funcionarios: [5, 6] },
       ],
       testes: [
         { tipo: 'Hidráulico', resultado: 'Aprovado' },
@@ -85,16 +85,16 @@ const SEED: { aeronaves: Aeronave[]; funcionarios: Funcionario[] } = {
     },
     {
       id: 5,
-      codigo: 'AC-500',
-      modelo: 'Super Tucano',
+      codigo: '5',
+      modelo: 'aviao5',
       tipo: 'Militar',
       capacidade: 2,
       alcance: 1330,
       pecas: [
-        { nome: 'Sistema HOTAS', tipo: 'Nacional', fornecedor: 'Atech', status: 'Em Produção' },
+        { nome: 'Sistema ', tipo: 'Nacional', fornecedor: 'Embraer', status: 'Em Produção' },
       ],
       etapas: [
-        { id: 501, nome: 'Montagem Estrutural', status: 'Pendente', prazo: '2025-07-10', funcionarios: [] },
+        { id: 501, nome: 'Montagem 2', status: 'Pendente', prazo: '2025-07-10', funcionarios: [] },
       ],
       testes: [],
     },
