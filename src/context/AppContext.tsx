@@ -17,14 +17,150 @@ export const ENUMS = {
 
 const SEED: { aeronaves: Aeronave[]; funcionarios: Funcionario[] } = {
   aeronaves: [
-    { id: 1, codigo: 'AC-100', modelo: 'Phenom 300', tipo: 'Comercial', capacidade: 10, alcance: 3650, pecas: [{ nome: 'Motor PT6A-10', tipo: 'Importada', fornecedor: 'Pratt & Whitney', status: 'Pronta' }, { nome: 'Avionics Suite', tipo: 'Importada', fornecedor: 'Garmin', status: 'Pronta' }], etapas: [{ id: 101, nome: 'Montagem de Fuselagem', status: 'Concluído', prazo: '2024-06-01', funcionarios: [1] }, { id: 102, nome: 'Instalação Elétrica', status: 'Em Andamento', prazo: '2024-07-15', funcionarios: [2] }, { id: 103, nome: 'Instalação Hidráulica', status: 'Pendente', prazo: '2024-08-10', funcionarios: [] }], testes: [{ tipo: 'Elétrico', resultado: 'Aprovado' }] },
-    { id: 2, codigo: 'AC-200', modelo: 'Gripen NG', tipo: 'Militar', capacidade: 1, alcance: 4000, pecas: [{ nome: 'Motor RM12', tipo: 'Importada', fornecedor: 'Volvo Aero', status: 'Em Transporte' }], etapas: [{ id: 201, nome: 'Integração de Sistemas', status: 'Concluído', prazo: '2024-05-20', funcionarios: [1, 2] }, { id: 202, nome: 'Testes de Turbina', status: 'Concluído', prazo: '2024-06-05', funcionarios: [1] }], testes: [{ tipo: 'Aerodinâmico', resultado: 'Aprovado' }, { tipo: 'Hidráulico', resultado: 'Reprovado' }] },
-    { id: 3, codigo: 'AC-300', modelo: 'C-390 Millennium', tipo: 'Militar', capacidade: 80, alcance: 5800, pecas: [], etapas: [{ id: 301, nome: 'Estrutura Primária', status: 'Pendente', prazo: '2024-09-01', funcionarios: [] }], testes: [] },
+    {
+      id: 1,
+      codigo: 'AC-100',
+      modelo: 'Phenom 300',
+      tipo: 'Comercial',
+      capacidade: 10,
+      alcance: 3650,
+      pecas: [
+        { nome: 'Motor PT6A-10', tipo: 'Importada', fornecedor: 'Pratt & Whitney', status: 'Pronta' },
+      ],
+      etapas: [
+        { id: 101, nome: 'Montagem de Fuselagem', status: 'Concluído', prazo: '2025-03-10', funcionarios: [1, 3] },
+      ],
+      testes: [
+        { tipo: 'Elétrico', resultado: 'Aprovado' },
+      ],
+    },
+    {
+      id: 2,
+      codigo: 'AC-200',
+      modelo: 'Gripen NG',
+      tipo: 'Militar',
+      capacidade: 1,
+      alcance: 4000,
+      pecas: [
+        { nome: 'Motor RM12', tipo: 'Importada', fornecedor: 'Volvo Aero', status: 'Em Transporte' },
+      ],
+      etapas: [
+        { id: 201, nome: 'Integração de Sistemas', status: 'Em Andamento', prazo: '2025-04-15', funcionarios: [2, 4] },
+      ],
+      testes: [
+        { tipo: 'Aerodinâmico', resultado: 'Aprovado' },
+      ],
+    },
+    {
+      id: 3,
+      codigo: 'AC-300',
+      modelo: 'C-390 Millennium',
+      tipo: 'Militar',
+      capacidade: 80,
+      alcance: 5800,
+      pecas: [
+        { nome: 'Motor AE 3007', tipo: 'Importada', fornecedor: 'Rolls-Royce', status: 'Em Produção' },
+      ],
+      etapas: [
+        { id: 301, nome: 'Estrutura Primária', status: 'Pendente', prazo: '2025-06-01', funcionarios: [] },
+      ],
+      testes: [],
+    },
+    {
+      id: 4,
+      codigo: 'AC-400',
+      modelo: 'Legacy 500',
+      tipo: 'Comercial',
+      capacidade: 12,
+      alcance: 5600,
+      pecas: [
+        { nome: 'Motor HTF7500E', tipo: 'Importada', fornecedor: 'Honeywell', status: 'Pronta' },
+      ],
+      etapas: [
+        { id: 401, nome: 'Instalação de Aviônicos', status: 'Concluído', prazo: '2025-02-28', funcionarios: [5, 6] },
+      ],
+      testes: [
+        { tipo: 'Hidráulico', resultado: 'Aprovado' },
+      ],
+    },
+    {
+      id: 5,
+      codigo: 'AC-500',
+      modelo: 'Super Tucano',
+      tipo: 'Militar',
+      capacidade: 2,
+      alcance: 1330,
+      pecas: [
+        { nome: 'Sistema HOTAS', tipo: 'Nacional', fornecedor: 'Atech', status: 'Em Produção' },
+      ],
+      etapas: [
+        { id: 501, nome: 'Montagem Estrutural', status: 'Pendente', prazo: '2025-07-10', funcionarios: [] },
+      ],
+      testes: [],
+    },
   ],
+
   funcionarios: [
-    { id: 1, nome: 'Roberto Silva', telefone: '(12) 9999-0001', endereco: 'Av. Shishito, 100', usuario: 'admin', senha: '123', nivel: 'Administrador', cargo: 'Administrador Chefe' },
-    { id: 2, nome: 'Carlos Oliveira', telefone: '(12) 9988-7766', endereco: 'Rua A, 123', usuario: 'carlos.eng', senha: '123', nivel: 'Engenheiro', cargo: 'Engenheiro Sênior' },
-    { id: 3, nome: 'Mariana Souza', telefone: '(12) 9911-2233', endereco: 'Av. B, 456', usuario: 'mari.tec', senha: '123', nivel: 'Operador', cargo: 'Técnica Operacional' },
+    {
+      id: 1,
+      nome: 'Isabelly Administrativo',
+      telefone: '(12) 9999-1001',
+      endereco: 'Av. Santos Dumont, 100 — São José dos Campos',
+      usuario: 'isa.admin',
+      senha: '123',
+      nivel: 'Administrador' as NivelPermissao,
+      cargo: 'Administradora do Sistema',
+    },
+    {
+      id: 2,
+      nome: 'Isabelly Engenharia',
+      telefone: '(12) 9988-2002',
+      endereco: 'Rua Eng. Álvaro Rodrigues, 45 — São José dos Campos',
+      usuario: 'isa.eng',
+      senha: '456',
+      nivel: 'Engenheiro' as NivelPermissao,
+      cargo: 'Engenheira de Produção',
+    },
+    {
+      id: 3,
+      nome: 'Operador 01',
+      telefone: '(12) 9977-3003',
+      endereco: 'Rua das Indústrias, 200 — Jacareí',
+      usuario: 'operador01',
+      senha: '789',
+      nivel: 'Operador' as NivelPermissao,
+      cargo: 'Técnico Operacional',
+    },
+    {
+      id: 4,
+      nome: 'Operador 02',
+      telefone: '(12) 9966-4004',
+      endereco: 'Av. Brasil, 350 — Taubaté',
+      usuario: 'operador02',
+      senha: '321',
+      nivel: 'Operador' as NivelPermissao,
+      cargo: 'Técnico de Montagem',
+    },
+    {
+      id: 5,
+      nome: 'Engenheiro 01',
+      telefone: '(12) 9955-5005',
+      endereco: 'Rua XV de Novembro, 78 — São José dos Campos',
+      usuario: 'eng01',
+      senha: '654',
+      nivel: 'Engenheiro' as NivelPermissao,
+      cargo: 'Engenheiro de Testes',
+    },
+    {
+      id: 6,
+      nome: 'Isabelly Operações',
+      telefone: '(12) 9944-6006',
+      endereco: 'Rua Paraíba, 12 — São José dos Campos',
+      usuario: 'isa.op',
+      senha: '987',
+      nivel: 'Operador' as NivelPermissao,
+      cargo: 'Operadora de Linha',
+    },
   ],
 }
 
