@@ -1,7 +1,6 @@
 # AeroCode 
 
-Protótipo navegável de um sistema MRO (*Maintenance, Repair & Overhaul*) para gerenciar o ciclo completo de produção de aeronaves — do cadastro inicial até a entrega final ao cliente.
-
+Protótipo navegável de um sistema para gerenciar a produção de aeronaves
 ---
 
 ## Como rodar
@@ -96,79 +95,6 @@ AV2/
 
 ---
 
-## 🗂 Páginas e funcionalidades
-
-### Dashboard
-Visão geral operacional com:
-- Cards de métricas (aeronaves, peças, etapas abertas, funcionários)
-- Gráfico de etapas por status (Pendente / Em Andamento / Concluído)
-- Gráfico de progresso da frota por aeronave (% de etapas concluídas)
-- Gráfico de resultados dos testes (Aprovado / Reprovado)
-- Tabela da frota com barra de progresso por aeronave
-
-### Aeronaves
-- Listagem completa com código, modelo, tipo, capacidade e alcance
-- Cadastro de nova aeronave com validação de **código único**
-- Acesso à página de detalhes de cada aeronave
-
-### Detalhe da Aeronave
-- Informações completas e barra de progresso geral
-- Lista de etapas vinculadas com ações de iniciar/concluir inline
-- Lista de peças com status
-- Lista de testes realizados
-
-### Peças
-- Listagem de todas as peças de todas as aeronaves
-- Adição de peça a uma aeronave (nome, tipo, fornecedor)
-- Atualização de status: `Em Produção` → `Em Transporte` → `Pronta`
-
-### Etapas de Produção
-- Listagem geral de etapas com aeronave, prazo, responsáveis e status
-- Adição de etapa com **bloqueio**: não é permitido criar nova etapa se já existe uma com status `Pendente`
-- Controle sequencial: etapas devem ser **iniciadas e concluídas em ordem**
-- Ações de **Iniciar** e **Concluir** diretamente na tabela
-
-###  Testes Técnicos
-- Registro de testes por aeronave
-- Tipos disponíveis: `Elétrico`, `Hidráulico`, `Aerodinâmico`
-- Resultado: `Aprovado` ou `Reprovado`
-
-###  Funcionários
-- Listagem com ID, nome, usuário, telefone, cargo e nível de permissão
-- Cadastro de novo funcionário com validação de **usuário único** e **senha única**
-- Associação de funcionários a etapas específicas (sem duplicidade)
-- Visualização de membros por etapa
-- Cadastro restrito ao nível **Administrador**
-
-###  Relatório Final
-- Seleção de aeronave, cliente e data de entrega
-- Geração de relatório completo com etapas, peças e resultados de testes
-- **Download em `.txt`** para consulta posterior
-
----
-
-##  Stack tecnológica
-
-| Tecnologia       | Versão  | Uso                              |
-|------------------|---------|----------------------------------|
-| React            | 18      | Biblioteca de interface          |
-| TypeScript       | 5       | Tipagem estática                 |
-| Vite             | 5       | Build tool e dev server          |
-| Recharts         | 2       | Gráficos do dashboard            |
-| Lucide React     | 0.383   | Ícones                           |
-
----
-
-##  Regras de negócio implementadas
-
-- Código de aeronave deve ser **único**
-- Usuário e senha de funcionário devem ser **únicos** no sistema
-- Não é possível adicionar nova etapa enquanto houver etapa com status **Pendente**
-- Etapas seguem **ordem sequencial**: só é possível iniciar a próxima após concluir a anterior
-- Associação de funcionário a etapa **não permite duplicidade**
-- Cadastro de funcionários restrito ao nível **Administrador**
-
----
 
 ##  Observações
 
