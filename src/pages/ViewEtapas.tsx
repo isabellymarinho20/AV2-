@@ -15,7 +15,7 @@ export default function ViewEtapas() {
   const [modalStatusAberto, setModalStatusAberto] = useState(false)
   const [etapaSelecionada, setEtapaSelecionada] = useState<any>(null)
   const [form, setForm] = useState({ aeroId: '', nome: '', prazo: '' })
-
+//***************************** */
   const handleChange = (campo: keyof typeof form) => (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
     setForm(prev => ({ ...prev, [campo]: e.target.value }))
 

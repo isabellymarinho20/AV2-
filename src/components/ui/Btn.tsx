@@ -4,9 +4,10 @@ import type { CSSProperties, ElementType } from 'react'
 type BtnVariant = 'primary' | 'dark' | 'ghost' | 'danger' | 'success' | 'outline'
 type BtnSize    = 'sm' | 'md'
 
+
 interface BtnProps {
   children?: React.ReactNode
-  variant?:  BtnVariant
+  variant?:  BtnVariant//***************************** */
   size?:     BtnSize
   full?:     boolean
   onClick?:  () => void
@@ -30,7 +31,7 @@ export default function Btn({
 
   const pad = size === 'sm' ? '6px 14px' : '10px 20px'
   const fs  = size === 'sm' ? 12 : 13
-
+//***************************** */
   const variants: Record<BtnVariant, CSSProperties> = {
     primary: { background: hov ? '#005fa3' : '#007CC3', color: '#fff', padding: pad, fontSize: fs },
     dark:    { background: hov ? '#004080' : '#003366', color: '#fff', padding: pad, fontSize: fs },

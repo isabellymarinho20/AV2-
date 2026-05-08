@@ -18,5 +18,5 @@ export default function Toast() {
       {isErr ? <AlertTriangle size={15} /> : <CheckCircle size={15} />}
       {toast.msg}
     </div>
-  )
+  )//***************************** */
 }

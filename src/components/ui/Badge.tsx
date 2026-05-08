@@ -6,7 +6,7 @@ interface BadgeProps {
   children: ReactNode
   variant?: BadgeVariant
 }
-
+//***************************** */
 const VARIANTS: Record<BadgeVariant, { bg: string; color: string }> = {
   gray:   { bg: '#f3f4f6', color: '#374151' },
   blue:   { bg: '#eff6ff', color: '#1d4ed8' },

@@ -15,7 +15,7 @@ interface Props {
   setView: (view: View) => void
   setSelectedAero: (aero: Aeronave) => void
 }
-
+//***************************** */
 export default function Dashboard({ setView, setSelectedAero }: Props) {
   const { aeronaves, funcionarios } = useApp()
   const allEtapas = aeronaves.flatMap(a => a.etapas)

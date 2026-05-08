@@ -7,13 +7,13 @@ export interface TableRow {
   _onClick?: () => void
   cells: TableCell[]
 }
-
+// table 
 interface TableProps {
   headers: string[]
   rows:    TableRow[]
   empty?:  string
 }
-
+//***************************** */
 function renderCell(cell: TableCell): ReactNode {
   if (typeof cell === 'object' && 'content' in cell) return cell.content
   return cell

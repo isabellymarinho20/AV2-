@@ -8,7 +8,7 @@ import {
 import { useApp } from '../context/AppContext'
 import type { View } from '../types'
 
-
+//***************************** */
 const NAV_GROUPS: { label: string; items: { id: View; icon: ElementType; label: string }[] }[] = [
   {
     label: 'Frota',

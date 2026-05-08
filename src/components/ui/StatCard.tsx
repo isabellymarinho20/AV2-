@@ -19,7 +19,7 @@ export default function StatCard({ label, value, icon: Icon, color = '#007CC3' }
           <div style={{ fontSize: 36, fontWeight: 800, color: '#111827', lineHeight: 1, letterSpacing: '-1px' }}>
             {value}
           </div>
-        </div>
+        </div>//***************************** */
         <div style={{ width: 40, height: 40, borderRadius: 12, background: `${color}18`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <Icon size={20} color={color} />
         </div>

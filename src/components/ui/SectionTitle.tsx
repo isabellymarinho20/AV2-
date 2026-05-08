@@ -13,7 +13,7 @@ export default function SectionTitle({ children, sub }: SectionTitleProps) {
       </h2>
       {sub && (
         <p style={{ fontSize: 12, color: '#9ca3af', marginTop: 3, fontWeight: 500 }}>
-          {sub}
+          {sub}//***************************** */
         </p>
       )}
     </div>

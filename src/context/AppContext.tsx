@@ -171,7 +171,7 @@ export function useApp(): AppContextValue {
   if (!ctx) throw new Error('useApp must be used within AppProvider')
   return ctx
 }
-
+//***************************** */
 export function AppProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<Funcionario | null>(null)
   const [aeronaves, setAeronaves] = useState<Aeronave[]>(SEED.aeronaves)
